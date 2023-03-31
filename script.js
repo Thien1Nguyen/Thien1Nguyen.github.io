@@ -100,7 +100,7 @@ function animate() {
             const distance = Math.hypot(attack.x - enemy.x, attack.y - enemy.y)
             if (distance - enemy.radius - attack.radius < 1) {
                 //enemy death effects
-                for(let i = 0; i < Math.random() * 500 + 100; i++){
+                for(let i = 0; i < Math.random() * 200 + 100; i++){
                     effects.push(new Effect(enemy.x, enemy.y, Math.random() * 5 + 1, rgb[Math.round(Math.random() * (rgb.length - 1))],{x:Math.random()- 0.5, y:Math.random()- 0.5}, Math.random() * 5))
                 }
                 // console.log(effects)
