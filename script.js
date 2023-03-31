@@ -40,9 +40,6 @@ function halfVol() {
     gameOverSound.volume = 0.8;
 }
 
-window.addEventListener('click',()=>{
-    bgm.play();
-})
 
 window.addEventListener('load',()=>{
     bgm.pause();
@@ -483,6 +480,7 @@ document.getElementById('strBtn').addEventListener('click',() =>{
     document.getElementById('UI').classList.remove("hide");
     document.getElementById('space').classList.remove("hide");
     document.getElementById('UI').classList.remove("hide");
+    bgm.play();
     animate();
     spawnEnemies();
 })
