@@ -425,7 +425,7 @@ function spawnEnemies() {
     if (spawnDelay > 100) {
         spawnDelay = spawnDelay - (spawnDelay * adjustSpawn);
     }
-    console.log(spawnDelay)
+    // console.log(spawnDelay)
     setTimeout(() => {
         spawnEnemies();
     }, spawnDelay)
