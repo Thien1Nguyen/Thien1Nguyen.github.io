@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+body {
+    background-color: rgb(19, 17, 14);
+}
+
+#UI {
+    display: flex;
+    background-color: orangered;
+    color: white;
+    box-shadow: 5px 5px 20px yellow;
+    text-shadow: #FC0 1px 0 10px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 2%;
+    left: 5%;
+    width: 80px;
+    height: 80px;
+    font-size: 50pt;
+    border-radius: 50%;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+#bgImg {
+    display: none;
+}
+
+audio {
+    height: 20px;
+    width: 150px;
+    background-color: rgb(218, 225, 246);
+    position: absolute;
+    top: 0;
+    right: 2%;
+}
+
+/* util classes */
+
+.hide{
+    display: none !important;
+}
+.blue-text{
+    color: cornflowerblue;
+    text-shadow: #FC0 1px 0 10px;
+}
+.pink-text{
+    color: plum;
+    text-shadow: rgb(255, 255, 255) 1px 0 10px;
+}
+
+#Borkie{
+    margin-top: 10%;
+    width: 200px;
+    height: 200px;
+}
+
+#Love{
+    margin-top: 10%;
+    width: 200px;
+    height: 200px;
+}
+
+.bold{
+    font-weight: 900;
+    text-decoration: underline;
+    text-decoration-color: rgb(34, 243, 243);
+    text-decoration-style:wavy
+}
+
+.white{
+    background-color: white;
+    color: black;
+}
+.yellow{
+    background-color: yellow !important;
+}
+.orange{
+    background-color: orange!important;
+}
+.green{
+    background-color: green!important;
+}
+.blue{
+    background-color: navy!important;
+    color: white !important;
+}
+.purple{
+    background-color: purple!important;
+    color: white !important;
+}
+.red{
+    background-color: red!important;
+    color: white !important;
+}
+.brown{
+    background-color: brown!important;
+}
+.black{
+    background-color: black!important;
+    color: white !important;
+}
+/* Info display */
+
+#startBanner{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    background-color: bisque;
+    height: 500px;
+    width: 1000px;
+    border-radius: 15px;
+}
+
+.storyBanner{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 40pt;
+}
+
+.guideBanner{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    background-color: bisque;
+    height: 330px;
+    width: 100% ;
+}
+.guide{
+    list-style: none;
+    background-color: bisque;
+    margin-top: 70px;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+#strBtn{
+    color: white;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    margin-left: 400px;
+    width: 200px;
+    height: 100px;
+}
+
+
+/* Game Over! */
+#gameOverBanner{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    background-color: bisque;
+    height: 500px;
+    width: 1000px;
+    border-radius: 20px;
+}
+.endCard{
+        display: flex;
+        gap: 20px;
+        font-size: 100pt;
+        justify-content: center;
+        background-color: bisque;
+        height: 310px;
+        width: 100% ;
+        border-radius: 20px;
+}
+#beltBanner{
+    display: flex;
+    width: 99%;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 20pt;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: white;
+    margin-bottom: 20px;
+}
+#restrBtn{
+        color: white;
+        background-color: plum;
+        border-radius: 10px;
+        margin-left: 400px;
+        width: 200px;
+        height: 100px;
+}

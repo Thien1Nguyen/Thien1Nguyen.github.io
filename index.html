@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bokie and Love</title>
+    <link rel="stylesheet" href="style.css" class="css">
+</head>
+
+<body>
+    <!--background img-->
+    <img src="img/Img.png" alt="testsprite" id="bgImg">
+
+    <!--sounds-->
+    <audio controls id="BGM">
+        <source src="sound/8-bit-dream-land.mp3">
+    </audio>
+    <audio id="popSound">
+        <source src="sound/longpop.mp3">
+    </audio>
+    <audio id="gameOver">
+        <source src="sound/gameOver.wav">
+    </audio>
+
+    <!--Info Display-->
+    <div id="startBanner">
+        <p class="storyBanner"> <span class="blue-text">Borkie</span> and <span class="pink-text">Love</span></p>
+        <div class="guideBanner">
+            <img src="img/Chickie.png" alt="Bokie" id="Borkie">
+            <ul class="guide">
+                <li>Help Bokie and Love bring back colors the to the world!</li>
+                <li>How to play: </li>
+                <li> <span class="bold"> W</span>:up, </li>
+                <li> <span class="bold">S</span>: down </li>
+                <li> <span class="bold">A</span>: left </li>
+                <li> <span class="bold">D</span>: right </li>
+                <li><span class="bold">SpaceBar</span>: Bokie fly back to Love!</li>
+                <li> <span class="bold"> Left click </span> to heart beam ❤️ </li>
+            </ul>
+            <img src="img/CutieChickie.png" alt="Love" id="Love">
+        </div>
+        <button id="strBtn">Start Game</button>
+    </div>
+
+    <!--GameOver Banner-->
+    <div id="gameOverBanner" class="hide">
+        <P class="endCard"><span class="score">0</span></P>
+        <p id="beltBanner" class="white">White Belt!</p>
+        <button id="restrBtn">Play Again</button>
+    </div>
+
+    <!--User Intersurface-->
+    <p id="UI" class="hide"> <span class="scoreUI">0</span></p>
+    <!--Game Canvas-->
+    <canvas id="space" class="hide"></canvas>
+    <script src="script.js"></script>
+</body>
+
+</html>
