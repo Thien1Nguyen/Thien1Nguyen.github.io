@@ -40,10 +40,6 @@ function halfVol() {
     gameOverSound.volume = 0.8;
 }
 
-
-window.addEventListener('load',()=>{
-    bgm.pause();
-})
 halfVol();
 var rgb = ['red','navy','yellow', 'ForestGreen','tomato','DeepPink','SeaGreen','MediumPurple', 'Indigo','SpringGreen','PaleGreen','PapayaWhip','Gold','Bisque'];
 var bw = ['black', 'white']
