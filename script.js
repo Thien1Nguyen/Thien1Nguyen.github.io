@@ -66,7 +66,8 @@ function animate() {
     player.update();
     effects.forEach((effect, index) => {
         if(effect.alpha <= 0){
-            effects.splice(index, 1)
+            effects.splice(index, 50)
+            // console.log(effects)
         }
         else {
         effect.update();
@@ -100,8 +101,8 @@ function animate() {
             const distance = Math.hypot(attack.x - enemy.x, attack.y - enemy.y)
             if (distance - enemy.radius - attack.radius < 1) {
                 //enemy death effects
-                for(let i = 0; i < Math.random() * 200 + 100; i++){
-                    effects.push(new Effect(enemy.x, enemy.y, Math.random() * 5 + 1, rgb[Math.round(Math.random() * (rgb.length - 1))],{x:Math.random()- 0.5, y:Math.random()- 0.5}, Math.random() * 5))
+                for(let i = 0; i < Math.random() * 20 + 5; i++){
+                    effects.push(new Effect(enemy.x, enemy.y, Math.random() * 15, rgb[Math.round(Math.random() * (rgb.length - 1))],{x:Math.random()- 0.5, y:Math.random()- 0.5}, Math.random() * 5))
                 }
                 // console.log(effects)
                 //score counter with mobs and attacks hit detect
@@ -181,10 +182,10 @@ class Player {
         // c.arc(this.position.x, this.position.y, this.radius, 0, Math.PI * 2, false);
         // c.fillStyle = 'CornflowerBlue';
         // c.fill()
-        c.beginPath();
-        c.arc(this.position.x, this.position.y, this.radius + 0.1, 0, Math.PI * 2, false);
-        c.strokeStyle = 'black'
-        c.stroke();
+        // c.beginPath();
+        // c.arc(this.position.x, this.position.y, this.radius + 0.1, 0, Math.PI * 2, false);
+        // c.strokeStyle = 'black'
+        // c.stroke();
         c.drawImage(Bokie, this.position.x - 20, this.position.y - 22, 40, 40)
     }
     // an update method to change the player position and then re-draw the player with new into
@@ -288,8 +289,8 @@ class Attack {
     constructor(player, x, y, radius, color, velocity, speed) {
         let rgb = ['red', 'blue', 'green', 'purple', 'white']
         this.player = player
-        this.x = player.position.x;
-        this.y = player.position.y;
+        this.x = x;
+        this.y = y;
         this.radius = radius;
         this.color = color;
         this.velocity = velocity;
@@ -468,7 +469,8 @@ addEventListener('click', (e) => {
     // console.log(colorRandom)
     // console.log(e.clientX, e.clientY)
     attacks.push(new Attack(player, player.position.x, player.position.y, 10, 'red', velocity, 7))
-    // console.log(attacks)
+    // attacks.push(new Attack(player, e.clientX, e.clientY, 10, 'red', velocity, 0))
+    
 })
 // calling the animate function
 document.getElementById('strBtn').addEventListener('click',() =>{
